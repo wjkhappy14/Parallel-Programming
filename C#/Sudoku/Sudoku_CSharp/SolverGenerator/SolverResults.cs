@@ -9,9 +9,9 @@
 //--------------------------------------------------------------------------
 
 using System.Collections.Generic;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques;
+using HighPerformance.Sudoku.Techniques;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>Represents the results from attempting to solve a Sudoku puzzle.</summary>
 	public sealed class SolverResults

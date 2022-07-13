@@ -10,9 +10,9 @@
 
 using System;
 using System.Collections.Generic;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Collections;
+using HighPerformance.Sudoku.Collections;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques
+namespace HighPerformance.Sudoku.Techniques
 {
 	/// <summary>Base type used for eliminating possible numbers from cells in a puzzle state.</summary>
     [Serializable]

@@ -11,7 +11,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls
+namespace HighPerformance.Sudoku.Controls
 {
 	/// <summary>A derived panel that uses double buffering to prevent flicker.</summary>
 	[ToolboxBitmap(typeof(Panel))]

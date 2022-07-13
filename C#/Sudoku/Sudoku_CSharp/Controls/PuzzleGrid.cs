@@ -16,11 +16,11 @@ using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Collections;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Utilities;
+using HighPerformance.Sudoku.Collections;
+using HighPerformance.Sudoku.Techniques;
+using HighPerformance.Sudoku.Utilities;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls
+namespace HighPerformance.Sudoku.Controls
 {
 	/// <summary>Control for displaying and interacting with a PuzzleState.</summary>
 	[ToolboxBitmap(typeof(DataGrid))]

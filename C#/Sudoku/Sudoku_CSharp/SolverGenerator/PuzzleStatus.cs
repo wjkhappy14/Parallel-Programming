@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>The status of a puzzle state.</summary>
 	[Serializable]

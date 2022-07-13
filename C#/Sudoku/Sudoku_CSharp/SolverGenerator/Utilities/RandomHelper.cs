@@ -11,7 +11,7 @@
 using System;
 using System.Security.Cryptography;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Utilities
+namespace HighPerformance.Sudoku.Utilities
 {
 	/// <summary>Random number utilities.</summary>
 	internal static class RandomHelper

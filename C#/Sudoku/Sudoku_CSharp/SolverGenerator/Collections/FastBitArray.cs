@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Collections
+namespace HighPerformance.Sudoku.Collections
 {
 	/// <summary>A simple bit bucket.</summary>
 	[Serializable]

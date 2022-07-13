@@ -12,7 +12,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls
+namespace HighPerformance.Sudoku.Controls
 {
 	/// <summary>Double-buffered panel that displays a stretched image.</summary>
 	internal class ImagePanel : NoFlickerPanel

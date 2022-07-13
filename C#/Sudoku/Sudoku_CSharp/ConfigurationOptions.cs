@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>Used for saving and restoring configuration options.</summary>
 	[Serializable]

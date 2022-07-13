@@ -10,9 +10,9 @@
 
 using System;
 using System.Collections.Generic;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques;
+using HighPerformance.Sudoku.Techniques;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>Options for configuring how the solver does its processing.</summary>
 	public sealed class SolverOptions : ICloneable

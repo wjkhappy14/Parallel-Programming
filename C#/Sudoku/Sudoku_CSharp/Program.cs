@@ -15,7 +15,7 @@ using System.Security.Permissions;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
     /// <summary>Contains the entrypoint for the application.</summary>
     public static class Program

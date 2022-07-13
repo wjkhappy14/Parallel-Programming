@@ -14,10 +14,10 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.CompilerServices;
 using System.Text;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Collections;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques;
+using HighPerformance.Sudoku.Collections;
+using HighPerformance.Sudoku.Techniques;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>Maintains the state for a particular instance of a Sudoku puzzle.</summary>
 	[Serializable]

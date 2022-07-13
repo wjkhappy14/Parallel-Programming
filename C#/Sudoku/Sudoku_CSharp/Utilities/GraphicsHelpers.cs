@@ -11,7 +11,7 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Utilities
+namespace HighPerformance.Sudoku.Utilities
 {
 	/// <summary>Graphics utility class.</summary>
 	internal static class GraphicsHelpers

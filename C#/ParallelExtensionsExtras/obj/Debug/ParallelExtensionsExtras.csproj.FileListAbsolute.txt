@@ -1,6 +1,0 @@
-E:\source\code\Parallel-Programming\C#\ParallelExtensionsExtras\bin\Debug\ParallelExtensionsExtras.dll
-E:\source\code\Parallel-Programming\C#\ParallelExtensionsExtras\bin\Debug\ParallelExtensionsExtras.pdb
-E:\source\code\Parallel-Programming\C#\ParallelExtensionsExtras\obj\Debug\ParallelExtensionsExtras.csproj.AssemblyReference.cache
-E:\source\code\Parallel-Programming\C#\ParallelExtensionsExtras\obj\Debug\ParallelExtensionsExtras.csproj.CoreCompileInputs.cache
-E:\source\code\Parallel-Programming\C#\ParallelExtensionsExtras\obj\Debug\ParallelExtensionsExtras.dll
-E:\source\code\Parallel-Programming\C#\ParallelExtensionsExtras\obj\Debug\ParallelExtensionsExtras.pdb

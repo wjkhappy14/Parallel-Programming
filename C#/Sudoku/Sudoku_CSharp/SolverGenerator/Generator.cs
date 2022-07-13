@@ -14,12 +14,12 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Drawing;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Utilities;
+using HighPerformance.Sudoku.Techniques;
+using HighPerformance.Sudoku.Utilities;
 using System.Collections.Concurrent;
 using System.Linq;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>Generates Sudoku puzzles.</summary>
 	public class Generator

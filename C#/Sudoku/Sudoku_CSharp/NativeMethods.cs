@@ -12,7 +12,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Security;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>P/Invoke methods and values.</summary>
 	[SuppressUnmanagedCodeSecurity]

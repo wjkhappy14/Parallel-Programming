@@ -10,9 +10,9 @@
 
 using System;
 using System.Drawing;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Collections;
+using HighPerformance.Sudoku.Collections;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques
+namespace HighPerformance.Sudoku.Techniques
 {
 	/// <summary>Implements the beginner elimination technique.</summary>
 	[Serializable]

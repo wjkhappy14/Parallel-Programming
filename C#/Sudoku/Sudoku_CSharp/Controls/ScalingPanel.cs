@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls
+namespace HighPerformance.Sudoku.Controls
 {
 	/// <summary>Resizes contained controls based on maintaining original aspect ratios.</summary>
 	internal class ScalingPanel : NoFlickerPanel

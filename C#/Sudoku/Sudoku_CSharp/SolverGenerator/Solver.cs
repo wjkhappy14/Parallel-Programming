@@ -11,11 +11,11 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Collections;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Utilities;
+using HighPerformance.Sudoku.Collections;
+using HighPerformance.Sudoku.Techniques;
+using HighPerformance.Sudoku.Utilities;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>Analyzes and solves Sudoku puzzles.</summary>
 	public static class Solver

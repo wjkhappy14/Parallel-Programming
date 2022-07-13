@@ -14,13 +14,13 @@ using System.IO;
 using System.Reflection;
 using System.Resources;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>Provides strongly-typed resource access to the rest of the application.</summary>
 	internal static class ResourceHelper
 	{
 		/// <summary>The name of the resource file containing the string resources for this application.</summary>
-		private const string _stringsResourceFileName = "Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Strings";
+		private const string _stringsResourceFileName = "HighPerformance.Sudoku.Strings";
 		/// <summary>The resource manager used to load all resources.</summary>
 		private static ResourceManager _manager;
 		/// <summary>This assembly.</summary>
@@ -116,35 +116,35 @@ namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
 			_aboutToLosePuzzle = _manager.GetString("AboutToLosePuzzle");
 
 			// Load the image resources that are compiled into the assembly manifest
-			_boardBackgroundImage = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.BoardBackground.png");
-			_boardImage = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.Board.png");
+			_boardBackgroundImage = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.BoardBackground.png");
+			_boardImage = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.Board.png");
 
 			// Get the active and hint cell images
-			_cellActiveSquare = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellActiveSquare.png");
-			_cellActiveUpperLeft = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellActiveUpperLeft.png");
-			_cellActiveUpperRight = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellActiveUpperRight.png");
-			_cellActiveLowerLeft = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellActiveLowerLeft.png");
-			_cellActiveLowerRight = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellActiveLowerRight.png");
-			_cellHintSquare = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellHintSquare.png");
-			_cellHintUpperLeft = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellHintUpperLeft.png");
-			_cellHintUpperRight = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellHintUpperRight.png");
-			_cellHintLowerLeft = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellHintLowerLeft.png");
-			_cellHintLowerRight = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.CellHintLowerRight.png");
+			_cellActiveSquare = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellActiveSquare.png");
+			_cellActiveUpperLeft = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellActiveUpperLeft.png");
+			_cellActiveUpperRight = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellActiveUpperRight.png");
+			_cellActiveLowerLeft = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellActiveLowerLeft.png");
+			_cellActiveLowerRight = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellActiveLowerRight.png");
+			_cellHintSquare = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellHintSquare.png");
+			_cellHintUpperLeft = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellHintUpperLeft.png");
+			_cellHintUpperRight = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellHintUpperRight.png");
+			_cellHintLowerLeft = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellHintLowerLeft.png");
+			_cellHintLowerRight = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.CellHintLowerRight.png");
 
 			// Get the form button images 
-			_buttonShadow = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.ButtonShadow.png");
-			_buttonCheckedImage = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.ButtonChecked.png");
-			_buttonUncheckedImage = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.ButtonUnchecked.png");
-			_buttonHighlightedImage = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.ButtonHighlighted.png");
-			_optionsImage = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.Options.png");
-			_undoImage = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.Undo.png");
-			_newPuzzleImage = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.New.png");
+			_buttonShadow = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.ButtonShadow.png");
+			_buttonCheckedImage = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.ButtonChecked.png");
+			_buttonUncheckedImage = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.ButtonUnchecked.png");
+			_buttonHighlightedImage = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.ButtonHighlighted.png");
+			_optionsImage = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.Options.png");
+			_undoImage = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.Undo.png");
+			_newPuzzleImage = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.New.png");
 
 			// Get new puzzle dialog images
-			_newPuzzleBackground = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.NewPuzzleBackground.png");
-			_newPuzzleItemChecked = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.NewPuzzleItemChecked.png");
-			_newPuzzleItemUnchecked = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.NewPuzzleItemUnchecked.png");
-			_newPuzzleItemHighlighted = GetResourceImageWithAlphaBlending("Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Images.NewPuzzleItemHighlighted.png");
+			_newPuzzleBackground = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.NewPuzzleBackground.png");
+			_newPuzzleItemChecked = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.NewPuzzleItemChecked.png");
+			_newPuzzleItemUnchecked = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.NewPuzzleItemUnchecked.png");
+			_newPuzzleItemHighlighted = GetResourceImageWithAlphaBlending("HighPerformance.Sudoku.Images.NewPuzzleItemHighlighted.png");
 		}
 
 		/// <summary>Gets the board image containing each cell.</summary>

@@ -9,9 +9,9 @@
 //--------------------------------------------------------------------------
 
 using System;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Collections;
+using HighPerformance.Sudoku.Collections;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Techniques
+namespace HighPerformance.Sudoku.Techniques
 {
 	/// <summary>Implements the naked single elimination technique.</summary>
 	[Serializable]

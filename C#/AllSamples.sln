@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShakespeareanMonkeys_CSharp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strassens_CSharp", "Strassens\Strassens_CSharp\Strassens_CSharp.csproj", "{EE139230-B32C-4633-A65E-9C63EDFD9259}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku_CSharp", "Sudoku\Sudoku_CSharp\Sudoku_CSharp.csproj", "{EF878B05-75E0-44E9-ACD0-6DECD8AE8356}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku", "Sudoku\Sudoku_CSharp\Sudoku.csproj", "{EF878B05-75E0-44E9-ACD0-6DECD8AE8356}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizePartitioning_CSharp", "VisualizePartitioning\VisualizePartitioning_CSharp\VisualizePartitioning_CSharp.csproj", "{D4A72B0D-204C-4D95-8E2C-5BFE6E0C0F33}"
 EndProject
@@ -106,6 +106,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reversi", "Reversi\Reversi\Reversi.csproj", "{63218209-66EB-4531-BB10-8843A8238A26}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MandelbrotFractals_CPlusPlus", "MandelbrotFractals\MandelbrotFractals_CppCli\MandelbrotFractals.vcxproj", "{03CBAAE8-3BCD-482F-83A3-950D0E6C07B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Echo", "Echo", "{03EC60C3-B5B8-45D1-AA21-A9EE15C1825B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echo", "Echo\Echo\Echo.csproj", "{B97379FD-48C3-445F-9522-90232FC3DF4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -534,6 +538,26 @@ Global
 		{03CBAAE8-3BCD-482F-83A3-950D0E6C07B3}.Release|Win32.Build.0 = Release|Win32
 		{03CBAAE8-3BCD-482F-83A3-950D0E6C07B3}.Release|x64.ActiveCfg = Release|Win32
 		{03CBAAE8-3BCD-482F-83A3-950D0E6C07B3}.Release|x86.ActiveCfg = Release|Win32
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|Win32.Build.0 = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|x64.Build.0 = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Debug|x86.Build.0 = Debug|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|Win32.ActiveCfg = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|Win32.Build.0 = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|x64.ActiveCfg = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|x64.Build.0 = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|x86.ActiveCfg = Release|Any CPU
+		{B97379FD-48C3-445F-9522-90232FC3DF4C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -565,6 +589,7 @@ Global
 		{D42E470B-3273-4426-A64B-E90FA2017560} = {B6ED4092-C6D2-4AEC-92B8-C5BA8938E5D8}
 		{63218209-66EB-4531-BB10-8843A8238A26} = {9003C3BF-FAFA-4FB0-A49E-D741465A655F}
 		{03CBAAE8-3BCD-482F-83A3-950D0E6C07B3} = {660B13DD-1349-45F0-8A2B-F986964B81B4}
+		{B97379FD-48C3-445F-9522-90232FC3DF4C} = {03EC60C3-B5B8-45D1-AA21-A9EE15C1825B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E4EF1D1-11C2-47E7-8438-94E64F559856}

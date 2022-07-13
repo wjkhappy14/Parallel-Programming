@@ -19,10 +19,10 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security;
 using System.Windows.Forms;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Utilities;
+using HighPerformance.Sudoku.Controls;
+using HighPerformance.Sudoku.Utilities;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
     /// <summary>The main form of the Sudoku application.</summary>
     internal sealed class MainForm : Form
@@ -37,28 +37,28 @@ namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainTooltips = new System.Windows.Forms.ToolTip(this.components);
-            this.tsbLoadPreviousGame = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.tsbBeginner2 = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.tsbIntermediate2 = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.tsbAdvanced2 = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.tsbExpert2 = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.tsbBeginner = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.tsbIntermediate = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.tsbAdvanced = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.tsbExpert = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.optionsButton = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.newGameButton = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.undoButton = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton();
-            this.backgroundPanel = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel();
-            this.pnlSavedOrNewPuzzle = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel();
+            this.tsbLoadPreviousGame = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.tsbBeginner2 = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.tsbIntermediate2 = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.tsbAdvanced2 = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.tsbExpert2 = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.tsbBeginner = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.tsbIntermediate = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.tsbAdvanced = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.tsbExpert = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.optionsButton = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.newGameButton = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.undoButton = new HighPerformance.Sudoku.Controls.TextStatefulButton();
+            this.backgroundPanel = new HighPerformance.Sudoku.Controls.ImagePanel();
+            this.pnlSavedOrNewPuzzle = new HighPerformance.Sudoku.Controls.ImagePanel();
             this.lblPlaySavedGame = new System.Windows.Forms.Label();
             this.lblDeleteSavedGameWarning = new System.Windows.Forms.Label();
             this.lblNewGameSavedDeleted = new System.Windows.Forms.Label();
-            this.pnlNewPuzzle = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel();
+            this.pnlNewPuzzle = new HighPerformance.Sudoku.Controls.ImagePanel();
             this.lblDifficultyLevel = new System.Windows.Forms.Label();
-            this.pnlGrid = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.NoFlickerPanel();
-            this.thePuzzleGrid = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.PuzzleGrid();
-            this.pnlControls = new Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ScalingPanel();
+            this.pnlGrid = new HighPerformance.Sudoku.Controls.NoFlickerPanel();
+            this.thePuzzleGrid = new HighPerformance.Sudoku.Controls.PuzzleGrid();
+            this.pnlControls = new HighPerformance.Sudoku.Controls.ScalingPanel();
             this.marqueeBar = new System.Windows.Forms.ProgressBar();
             this.backgroundPanel.SuspendLayout();
             this.pnlSavedOrNewPuzzle.SuspendLayout();
@@ -330,7 +330,7 @@ namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
             resources.ApplyResources(this.thePuzzleGrid, "thePuzzleGrid");
             this.thePuzzleGrid.ForeColor = System.Drawing.Color.Black;
             this.thePuzzleGrid.Name = "thePuzzleGrid";
-            this.thePuzzleGrid.PossibleNumbersDifficultyLevel = Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.PuzzleDifficulty.Easy;
+            this.thePuzzleGrid.PossibleNumbersDifficultyLevel = HighPerformance.Sudoku.PuzzleDifficulty.Easy;
             this.thePuzzleGrid.ShowIncorrectNumbers = true;
             this.thePuzzleGrid.ShowSuggestedCells = false;
             // 
@@ -367,24 +367,24 @@ namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
             this.ResumeLayout(false);
 
         }
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton undoButton;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton undoButton;
         private System.Windows.Forms.ToolTip mainTooltips;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.PuzzleGrid thePuzzleGrid;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ScalingPanel pnlControls;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.NoFlickerPanel pnlGrid;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel pnlNewPuzzle;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbIntermediate;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbBeginner;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbAdvanced;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbExpert;
+        private HighPerformance.Sudoku.Controls.PuzzleGrid thePuzzleGrid;
+        private HighPerformance.Sudoku.Controls.ScalingPanel pnlControls;
+        private HighPerformance.Sudoku.Controls.NoFlickerPanel pnlGrid;
+        private HighPerformance.Sudoku.Controls.ImagePanel pnlNewPuzzle;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbIntermediate;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbBeginner;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbAdvanced;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbExpert;
         private System.Windows.Forms.Label lblDifficultyLevel;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel pnlSavedOrNewPuzzle;
+        private HighPerformance.Sudoku.Controls.ImagePanel pnlSavedOrNewPuzzle;
         private System.Windows.Forms.Label lblNewGameSavedDeleted;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbBeginner2;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbIntermediate2;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbAdvanced2;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbExpert2;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton tsbLoadPreviousGame;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbBeginner2;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbIntermediate2;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbAdvanced2;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbExpert2;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton tsbLoadPreviousGame;
         private System.Windows.Forms.Label lblPlaySavedGame;
         private System.Windows.Forms.Label lblDeleteSavedGameWarning;
 
@@ -401,10 +401,10 @@ namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
         #endregion
 
         #region Member Variables
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel backgroundPanel;
+        private HighPerformance.Sudoku.Controls.ImagePanel backgroundPanel;
         private System.Windows.Forms.ProgressBar marqueeBar;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton newGameButton;
-        private Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton optionsButton;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton newGameButton;
+        private HighPerformance.Sudoku.Controls.TextStatefulButton optionsButton;
 
         /// <summary>The last user-selected puzzle difficulty.</summary>
         private PuzzleDifficulty _puzzleDifficulty;

@@ -144,7 +144,7 @@
     <value>tsbLoadPreviousGame</value>
   </data>
   <data name="&gt;&gt;tsbLoadPreviousGame.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbLoadPreviousGame.Parent" xml:space="preserve">
     <value>pnlSavedOrNewPuzzle</value>
@@ -174,7 +174,7 @@
     <value>tsbBeginner2</value>
   </data>
   <data name="&gt;&gt;tsbBeginner2.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbBeginner2.Parent" xml:space="preserve">
     <value>pnlSavedOrNewPuzzle</value>
@@ -204,7 +204,7 @@
     <value>tsbIntermediate2</value>
   </data>
   <data name="&gt;&gt;tsbIntermediate2.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbIntermediate2.Parent" xml:space="preserve">
     <value>pnlSavedOrNewPuzzle</value>
@@ -234,7 +234,7 @@
     <value>tsbAdvanced2</value>
   </data>
   <data name="&gt;&gt;tsbAdvanced2.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbAdvanced2.Parent" xml:space="preserve">
     <value>pnlSavedOrNewPuzzle</value>
@@ -261,7 +261,7 @@
     <value>tsbExpert2</value>
   </data>
   <data name="&gt;&gt;tsbExpert2.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbExpert2.Parent" xml:space="preserve">
     <value>pnlSavedOrNewPuzzle</value>
@@ -295,7 +295,7 @@
     <value>tsbBeginner</value>
   </data>
   <data name="&gt;&gt;tsbBeginner.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbBeginner.Parent" xml:space="preserve">
     <value>pnlNewPuzzle</value>
@@ -328,7 +328,7 @@
     <value>tsbIntermediate</value>
   </data>
   <data name="&gt;&gt;tsbIntermediate.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbIntermediate.Parent" xml:space="preserve">
     <value>pnlNewPuzzle</value>
@@ -358,7 +358,7 @@
     <value>tsbAdvanced</value>
   </data>
   <data name="&gt;&gt;tsbAdvanced.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbAdvanced.Parent" xml:space="preserve">
     <value>pnlNewPuzzle</value>
@@ -385,7 +385,7 @@
     <value>tsbExpert</value>
   </data>
   <data name="&gt;&gt;tsbExpert.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tsbExpert.Parent" xml:space="preserve">
     <value>pnlNewPuzzle</value>
@@ -415,7 +415,7 @@
     <value>optionsButton</value>
   </data>
   <data name="&gt;&gt;optionsButton.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;optionsButton.Parent" xml:space="preserve">
     <value>pnlControls</value>
@@ -445,7 +445,7 @@
     <value>newGameButton</value>
   </data>
   <data name="&gt;&gt;newGameButton.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;newGameButton.Parent" xml:space="preserve">
     <value>pnlControls</value>
@@ -475,7 +475,7 @@
     <value>undoButton</value>
   </data>
   <data name="&gt;&gt;undoButton.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.TextStatefulButton, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;undoButton.Parent" xml:space="preserve">
     <value>pnlControls</value>
@@ -601,7 +601,7 @@
     <value>pnlSavedOrNewPuzzle</value>
   </data>
   <data name="&gt;&gt;pnlSavedOrNewPuzzle.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.ImagePanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pnlSavedOrNewPuzzle.Parent" xml:space="preserve">
     <value>backgroundPanel</value>
@@ -661,7 +661,7 @@
     <value>pnlNewPuzzle</value>
   </data>
   <data name="&gt;&gt;pnlNewPuzzle.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.ImagePanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pnlNewPuzzle.Parent" xml:space="preserve">
     <value>backgroundPanel</value>
@@ -688,7 +688,7 @@
     <value>thePuzzleGrid</value>
   </data>
   <data name="&gt;&gt;thePuzzleGrid.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.PuzzleGrid, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.PuzzleGrid, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;thePuzzleGrid.Parent" xml:space="preserve">
     <value>pnlGrid</value>
@@ -715,7 +715,7 @@
     <value>pnlGrid</value>
   </data>
   <data name="&gt;&gt;pnlGrid.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.NoFlickerPanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.NoFlickerPanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pnlGrid.Parent" xml:space="preserve">
     <value>backgroundPanel</value>
@@ -742,7 +742,7 @@
     <value>pnlControls</value>
   </data>
   <data name="&gt;&gt;pnlControls.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ScalingPanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.ScalingPanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pnlControls.Parent" xml:space="preserve">
     <value>backgroundPanel</value>
@@ -799,7 +799,7 @@
     <value>backgroundPanel</value>
   </data>
   <data name="&gt;&gt;backgroundPanel.Type" xml:space="preserve">
-    <value>Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>HighPerformance.Sudoku.Controls.ImagePanel, Sudoku, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;backgroundPanel.Parent" xml:space="preserve">
     <value>$this</value>

@@ -56,3 +56,6 @@
 /C#/VisualizePartitioning/VisualizePartitioning_CSharp/bin/Debug
 /C#/VisualizePartitioning/VisualizePartitioning_CSharp/obj
 /C#/.vs/AllSamples
+/C#/Echo/Echo/bin/Debug/net6.0-windows
+/C#/Echo/Echo/obj
+/C#/ParallelExtensionsExtras/obj/Debug

@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku
+namespace HighPerformance.Sudoku
 {
 	/// <summary>Presents configuration options to the user.</summary>
 	internal class OptionsDialog : System.Windows.Forms.Form

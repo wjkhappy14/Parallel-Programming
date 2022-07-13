@@ -14,9 +14,9 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
-using Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Utilities;
+using HighPerformance.Sudoku.Utilities;
 
-namespace Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls
+namespace HighPerformance.Sudoku.Controls
 {
 	/// <summary>A custom button rendered with multiple images and text.</summary>
 	[ToolboxBitmap(typeof(Button))]
