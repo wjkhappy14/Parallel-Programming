@@ -1,0 +1,126 @@
+﻿<HTML>
+<HEAD>
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <TITLE></TITLE>
+    <script type="text/javascript">
+        window.onload = function () {
+
+
+        }
+    </script>
+</HEAD>
+<BODY>
+    https://www.cnblogs.com/my_life/articles/5733545.html
+    redisCommandArgv函数
+    函数原型
+
+
+    void *redisCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen);
+    参数说明
+
+    argvlen这个数组存储了命令参数中，每一个参数的长度，包含命令本身，比如 set foo bar 则argvlen ={3,3,3},如果argvlen为空，那么这个函数内部会自动调用strlen函数对每个参数进行求长度。
+    argv 存放每个命令参数的指针，argv={"set","foo","bar"}
+    argc 存放命令参数的个数上面的例子中argc=3
+    c 为redisContext对象。
+    为每一个参数指定长度，可以是二进制安全的函数。函数会按着长度来决定字符串的终止，而不是'\0'.
+
+    char hkey[] = "123456";
+    char hset[] = "hset";
+    char key[] = "testkey";
+    char hvalue[] = "3210";
+    int argc = 4;
+    char *argv[] = {hset,key,hkey,hvalue};
+    size_t argvlen[] = {4,6,4,3};
+    redisCommandArgv(context,argc,argv,argvlen);
+    > hgetall testkey
+    会得到321并不会得到和hvalue一样的值"3210"，因为在hset命令中指定了长度，只会读取前面的三个字符。
+
+
+    <a href="https://docs.jdcloud.com/cn/jcs-for-redis/corcplusplus-connect-to-redis-instance">Redis client for C++</a>
+    #include <stdio.h>
+        #include <stdlib.h>
+            #include <string.h>
+                #include <hiredis.h>
+                    int main(int argc, char **argv) {
+                    unsigned int j;
+                    redisContext *c;
+                    redisReply *reply;
+                    if (argc < 3) {
+                    printf("Usage: example jredis-cn-north-1-prod-redis-xxxxxxxxxx.jdcloud.com 6379 password\n");
+                    exit(0);
+                    }
+                    const char *hostname = argv[1];
+                    const int port = atoi(argv[2]);
+                    const char *password = argv[3];
+                    struct timeval timeout = { 1, 500000 }; // 1.5 seconds
+
+                    c = redisConnectWithTimeout(hostname, port, timeout);
+                    if (c == NULL || c->err) {
+                    if (c) {
+                    printf("Connection error: %s\n", c->errstr);
+                    redisFree(c);
+                    } else {
+                    printf("Connection error: can't allocate redis context\n");
+                    }
+                    exit(1);
+                    }
+
+                    /* AUTH */
+                    reply = redisCommand(c, "AUTH %s", password);
+                    printf("AUTH: %s\n", reply->str);
+                    freeReplyObject(reply);
+
+                    /* PING server */
+                    reply = redisCommand(c,"PING");
+                    printf("PING: %s\n", reply->str);
+                    freeReplyObject(reply);
+
+                    /* Set a key */
+                    reply = redisCommand(c,"SET %s %s", "foo", "hello world");
+                    printf("SET: %s\n", reply->str);
+                    freeReplyObject(reply);
+
+                    /* Set a key using binary safe API */
+                    reply = redisCommand(c,"SET %b %b", "bar", (size_t) 3, "hello", (size_t) 5);
+                    printf("SET (binary API): %s\n", reply->str);
+                    freeReplyObject(reply);
+
+                    /* Try a GET and two INCR */
+                    reply = redisCommand(c,"GET foo");
+                    printf("GET foo: %s\n", reply->str);
+                    freeReplyObject(reply);
+                    reply = redisCommand(c,"INCR counter");
+                    printf("INCR counter: %lld\n", reply->integer);
+                    freeReplyObject(reply);
+
+                    /* again ... */
+                    reply = redisCommand(c,"INCR counter");
+                    printf("INCR counter: %lld\n", reply->integer);
+                    freeReplyObject(reply);
+
+                    /* Create a list of numbers, from 0 to 9 */
+                    reply = redisCommand(c,"DEL mylist");
+                    freeReplyObject(reply);
+                    for (j = 0; j < 10; j++) {
+                    char buf[64];
+                    snprintf(buf,64,"%d",j);
+                    reply = redisCommand(c,"LPUSH mylist element-%s", buf);
+                    freeReplyObject(reply);
+                    }
+
+                    /* Let's check what we have inside the list */
+                    reply = redisCommand(c,"LRANGE mylist 0 -1");
+                    if (reply->type == REDIS_REPLY_ARRAY) {
+                    for (j = 0; j < reply->elements; j++) {
+                    printf("%u) %s\n", j, reply->element[j]->str);
+                    }
+                    }
+                    freeReplyObject(reply);
+                    /* Disconnects and frees the context */
+                    redisFree(c);
+                    return 0;
+                    }
+
+
+</BODY>
+</HTML>

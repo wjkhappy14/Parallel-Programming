@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>E:\source\code\Parallel-Programming\PushRedis\TickPushApp\cpp-redis.html</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\source\code\Parallel-Programming\PushRedis\TickPushApp\redis.htm</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -18,40 +18,54 @@ class Program
     {
         // NOTE: Synchronous .Wait() calls added only for demo purposes
 
-        // Single async request
-        Download("http://www.microsoft.com").ContinueWith(CompletedDownloadData).Wait();
+        string url = "https://www.tallper.cn/notify/wechat/miniapp";
 
-        // Single async request with timeout
-        Download("http://www.microsoft.com").WithTimeout(new TimeSpan(0, 0, 0, 0, 1)).ContinueWith(CompletedDownloadData).Wait();
 
-        // Serial async requests
-        Task.Factory.TrackedSequence(
-            () => Download("http://blogs.msdn.com/pfxteam"),
-            () => Download("http://blogs.msdn.com/nativeconcurrency"),
-            () => Download("http://exampleexampleexample.com"), // will fail
-            () => Download("http://msdn.com/concurrency"),
-            () => Download("http://bing.com")
-        ).ContinueWith(SerialTasksCompleted).Wait();
 
-        // Concurrent async requests
-        Task.Factory.ContinueWhenAll(new []
+        Parallel.For(0, 1, (index) =>
         {
-            Download("http://blogs.msdn.com/pfxteam"),
-            Download("http://blogs.msdn.com/nativeconcurrency"),
-            Download("http://exampleexampleexample.com"), // will fail
-            Download("http://msdn.com/concurrency"),
-            Download("http://bing.com")
+
+            UploadStringTask(url, "{}");
+            // Single async request
+            Download(url).ContinueWith(CompletedDownloadData).Wait();
+
+            // Single async request with timeout
+            Download(url).WithTimeout(new TimeSpan(0, 0, 0, 0, 1)).ContinueWith(CompletedDownloadData).Wait();
+
+            // Serial async requests
+            Task.Factory.TrackedSequence(
+                () => Download(url),
+                () => Download(url),
+                () => Download(url), // will fail
+                () => Download(url),
+                () => Download(url)
+            ).ContinueWith(SerialTasksCompleted).Wait();
+
+            // Concurrent async requests
+            Task.Factory.ContinueWhenAll(new[]
+            {
+            Download(url),
+            Download(url),
+            Download(url), // will fail
+            Download(url),
+            Download(url)
         }, ConcurrentTasksCompleted).Wait();
 
+        });
+
         // Done
-        Console.WriteLine();
         Console.WriteLine("Press <enter> to exit.");
         Console.ReadLine();
     }
 
     static Task<byte[]> Download(string url)
     {
-        return new WebClient().DownloadDataTask(url);
+        return new WebClient().DownloadDataTask($"{url}?id={Environment.TickCount}");
+    }
+
+    static Task<string> UploadStringTask(string url, string data)
+    {
+        return new WebClient().UploadStringTask($"{url}?id={Environment.TickCount}", "Post", data);
     }
 
     static void CompletedDownloadData(Task<byte[]> task)

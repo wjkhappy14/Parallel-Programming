@@ -59,3 +59,5 @@
 /C#/Echo/Echo/bin/Debug/net6.0-windows
 /C#/Echo/Echo/obj
 /C#/ParallelExtensionsExtras/obj/Debug
+/PushRedis/TickPushApp/TapQuoteAPILog
+/PushRedis/SubQuoteApp/x64/Debug
