@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TickReplayApp", "TickReplay
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TickPushApp", "TickPushApp\TickPushApp.vcxproj", "{97F32B20-E008-43B4-833D-CBBD3FA3D43C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalR.QuoteClient", "SignalR.QuoteClient\SignalR.QuoteClient.csproj", "{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,30 @@ Global
 		{97F32B20-E008-43B4-833D-CBBD3FA3D43C}.Test|x64.Build.0 = Release|x64
 		{97F32B20-E008-43B4-833D-CBBD3FA3D43C}.Test|x86.ActiveCfg = Release|Win32
 		{97F32B20-E008-43B4-833D-CBBD3FA3D43C}.Test|x86.Build.0 = Release|Win32
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Debug|x64.Build.0 = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Debug|x86.Build.0 = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Dev|x64.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Dev|x64.Build.0 = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Dev|x86.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Dev|x86.Build.0 = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Release|x64.ActiveCfg = Release|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Release|x64.Build.0 = Release|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Release|x86.ActiveCfg = Release|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Release|x86.Build.0 = Release|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Test|x64.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Test|x64.Build.0 = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Test|x86.ActiveCfg = Debug|Any CPU
+		{1278DADD-7BA8-46B5-ADDD-DD92A6E1C0CE}.Test|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
